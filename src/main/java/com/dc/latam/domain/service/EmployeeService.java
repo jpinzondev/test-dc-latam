@@ -1,6 +1,6 @@
 package com.dc.latam.domain.service;
 
-import com.dc.latam.domain.DomainEmployee;
+import com.dc.latam.domain.dto.DomainEmployee;
 import com.dc.latam.domain.repository.IEmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

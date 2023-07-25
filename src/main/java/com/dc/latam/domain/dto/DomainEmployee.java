@@ -1,4 +1,4 @@
-package com.dc.latam.domain;
+package com.dc.latam.domain.dto;
 
 public class DomainEmployee {
 

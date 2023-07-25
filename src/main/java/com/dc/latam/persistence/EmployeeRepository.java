@@ -1,6 +1,6 @@
 package com.dc.latam.persistence;
 
-import com.dc.latam.domain.DomainEmployee;
+import com.dc.latam.domain.dto.DomainEmployee;
 import com.dc.latam.domain.repository.IEmployeeRepository;
 import com.dc.latam.persistence.crud.IEmployeeCrudRepository;
 import com.dc.latam.persistence.entity.Employee;

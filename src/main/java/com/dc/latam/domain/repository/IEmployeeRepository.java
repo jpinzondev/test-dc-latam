@@ -1,6 +1,6 @@
 package com.dc.latam.domain.repository;
 
-import com.dc.latam.domain.DomainEmployee;
+import com.dc.latam.domain.dto.DomainEmployee;
 
 import java.util.List;
 import java.util.Optional;

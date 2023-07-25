@@ -1,6 +1,6 @@
 package com.dc.latam.persistence.mapper;
 
-import com.dc.latam.domain.DomainEmployee;
+import com.dc.latam.domain.dto.DomainEmployee;
 import com.dc.latam.persistence.entity.Employee;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
