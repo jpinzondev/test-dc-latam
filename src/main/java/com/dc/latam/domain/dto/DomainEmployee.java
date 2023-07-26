@@ -5,8 +5,16 @@ public class DomainEmployee {
     private String employeeName;
     private int employeeSalary;
     private int employeeAnualSalary;
-    private String employeeAge;
+    private int employeeAge;
     private String profileImage;
+
+    public DomainEmployee(Long id, String employeeName, int employeeSalary, int employeeAge, String profileImage) {
+        this.id = id;
+        this.employeeName = employeeName;
+        this.employeeSalary = employeeSalary;
+        this.employeeAge = employeeAge;
+        this.profileImage = profileImage;
+    }
 
     public Long getId() {
         return id;
@@ -32,11 +40,11 @@ public class DomainEmployee {
         this.employeeSalary = employeeSalary;
     }
 
-    public String getEmployeeAge() {
+    public int getEmployeeAge() {
         return employeeAge;
     }
 
-    public void setEmployeeAge(String employeeAge) {
+    public void setEmployeeAge(int employeeAge) {
         this.employeeAge = employeeAge;
     }
 
