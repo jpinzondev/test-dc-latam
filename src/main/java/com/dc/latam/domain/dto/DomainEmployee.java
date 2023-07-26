@@ -1,10 +1,10 @@
 package com.dc.latam.domain.dto;
 
 public class DomainEmployee {
-
     private Long id;
     private String employeeName;
     private int employeeSalary;
+    private int employeeAnualSalary;
     private String employeeAge;
     private String profileImage;
 
@@ -46,5 +46,12 @@ public class DomainEmployee {
 
     public void setProfileImage(String profileImage) {
         this.profileImage = profileImage;
+    }
+
+    public int getEmployeeAnualSalary() {
+        return employeeAnualSalary;
+    }
+    public void setEmployeeAnualSalary(int employeeAnualSalary) {
+        this.employeeAnualSalary = employeeAnualSalary;
     }
 }

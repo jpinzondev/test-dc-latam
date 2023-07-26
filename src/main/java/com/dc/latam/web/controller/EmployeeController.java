@@ -2,6 +2,7 @@ package com.dc.latam.web.controller;
 
 import com.dc.latam.domain.dto.DomainEmployee;
 import com.dc.latam.domain.service.EmployeeService;
+import com.dc.latam.web.exceptions.RequestException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -33,8 +34,8 @@ public class EmployeeController {
             return this.employeeService.getById(employeeId).
                     map(employee -> new ResponseEntity<>(employee, HttpStatus.OK))
                     .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
-        } catch (RuntimeException ex) {
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } catch (RequestException ex) {
+            throw new RequestException(ex.getCode(), ex.getStatus(), ex.getMessage());
         }
 
     }
